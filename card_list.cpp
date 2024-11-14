@@ -104,7 +104,7 @@ Card CardList::getMin() const
     Node *curr = root;
     while (curr->left)
     {
-        curr = curr->right;
+        curr = curr->left;
     }
     return curr->info;
 }
